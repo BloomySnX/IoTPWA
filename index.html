@@ -8,6 +8,18 @@
 </head>
 
 <body>
+    <script>
+        const PATH = 'service-worker.js';
+        let isServiceWorkersSupport = ('serviceWorker' in navigator);
+        if (isServiceWorkersSupport) {
+            console.log('Will service worker register?');
+            navigator.serviceWorker.register(PATH).then(function() {
+                console.log("Yes it did.");
+            }).catch(function(err) {
+                console.log("No it didn't. This happened: ", err)
+            });
+        }
+    </script>
     <div class="container">
         <nav>
             <ul>
@@ -32,6 +44,7 @@
             <content>
                 <div class="aboutUs" id="aboutUs">
                     <h2> O nas </h2>
+                    <img src="images/image.png" alt="not Girl in a jacket">
                     <p>
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Proin eu dui commodo, mollis risus eu, venenatis erat. Vivamus sit amet dui sit amet lorem semper pulvinar et ut sem. Donec vulputate bibendum mollis. Aenean iaculis
@@ -94,18 +107,6 @@
             </div>
 
         </div>
-        <script>
-            const PATH = '/service-worker.js';
-            let isServiceWorkersSupport = ('serviceWorker' in navigator);
-            if (isServiceWorkersSupport) {
-                console.log('Will service worker register?');
-                navigator.serviceWorker.register(PATH).then(function() {
-                    console.log("Yes it did.");
-                }).catch(function(err) {
-                    console.log("No it didn't. This happened: ", err)
-                });
-            }
-        </script>
         <footer>
             Copyright
         </footer>

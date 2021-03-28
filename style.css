@@ -89,4 +89,5 @@ nav a:hover {
 .articleField {
     display: flex;
     justify-content: center;
+    color: #000;
 }

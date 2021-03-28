@@ -54,7 +54,11 @@ nav {
     display: block;
     width: 100%;
     text-align: center;
-    display: block;
+}
+
+nav p {
+    float: left;
+    clear: both;
 }
 
 nav a {

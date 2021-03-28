@@ -12,8 +12,8 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/",
-    "background_color": "",
-    "theme_color": "",
+    "start_url": "https://bloomysnx.github.io/IoTPWA/",
+    "background_color": "#000",
+    "theme_color": "#666",
     "display": "fullscreen"
 }

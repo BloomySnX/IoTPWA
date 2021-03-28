@@ -1,9 +1,12 @@
 body {
-    background-color: lightskyblue;
+    background-color: #000;
 }
 
 .container {
-    background-color: brown;
+    background-color: #666;
+    width: 100%;
+    opacity: 80%;
+    color: #fffff0;
 }
 
 header {
@@ -70,12 +73,13 @@ nav a:hover {
 .aboutUs {
     float: left;
     padding: 10px;
-    background-color: cadetblue;
+    background-color: #191919;
+    opacity: 90%;
 }
 
 .contact {
     clear: both;
-    background-color: chartreuse;
+    background-color: #858585;
 }
 
 .footer {
